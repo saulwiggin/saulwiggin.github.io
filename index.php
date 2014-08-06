@@ -3,6 +3,16 @@
 <body>
 <h1>Hello World</h1>
 <h2>Saul Wiggin </h2>
+<p> Hacking with PHP </p>
+<p>
+      <?php
+        $items =  6;   // Set this to a number greater than 5!
+        
+        if($items < 7) {
+          echo "You get a 10% discount!";
+        }
+      ?>
+    </p>
 <p>I'm hosted with GitHub Pages.</p>
 <head>
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
