@@ -1,0 +1,1 @@
+function upDate() { alert("Traffic is OK today") }
