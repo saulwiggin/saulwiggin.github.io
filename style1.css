@@ -3,10 +3,16 @@
 
 h2, h3 {
 	font-family: sans-serif;
-	font-weight: bold; color: #990000;
+	font-weight: bold; color: Navy;
+	background-color: #CCC;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+	border-right-style: solid;
 }
 
 p {
 	font-family:Times;
-	font-weight: bold; color: #0041F4;
+	font-weight: bold; color: black;
 }
