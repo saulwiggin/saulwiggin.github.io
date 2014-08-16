@@ -10,7 +10,7 @@
 <form action="mailto:dkarlins@gmail.com" method="post"
 enctype="text/html" name="signup">
 <p>Email:
-<input name = "Email" type="text" size="30" maxlength="60>
+<input name = "Email" type="text" size="30" maxlength="60">
 </p>
 <p>
 Email:
@@ -20,5 +20,17 @@ Email:
 <input type="submit" />
 </p>
 </form>
-</body>
+
+<?php
+$email_to = "saulwiggin@googlemail.com";
+$email_subject = "E-list signup";
+$name = $_POST['name'];
+$email = $_POST['email'];
+$email_message = "E-list Signup\n\n";
+$email_message .= "name: ".$name."\n";
+$email_message .= "email: ".$email."\n";
+$headers = 'From: '.$email."\r\n";
+@mail($email_to, $email_subject, $email_message, $headers);
+?>
+<h3>Thanks for signing up! Return to our <a href+"index.html"> home</a> page. </h3></body>
 </html>
