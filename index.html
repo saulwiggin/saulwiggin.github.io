@@ -67,5 +67,19 @@ document.write("website navigation ");  </script></h3>
 <h3> Link to my Iccarus Blog where I publish my latest research and music</h3>
 <a href="http://feeds.feedburner.com/Iccarusblog" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a><a href="http://feeds.feedburner.com/Iccarusblog" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">Subscribe in a reader</a>
 
+
+<script src="/way.bundle.min.js"></script>
+
+<form way-data="formData" way-persistent> 
+<input type="text" name="name"> 
+<input type="text" name="picture"> 
+<img way-data="formData.picture" way-default="[some url]"> 
+<input type="checkbox" name="nationality[]" value="french"> [...] 
+<a way-action-push="formData.skills">Add a skill</a> 
+<div way-repeat="formData.skills"> 
+<input type="text" way-data="$$this.title" way-persistent> 
+<input type="radio" value="noob" way-data="$$this.level" way-persistent> [...] 
+</div> 
+</form>
 </body>
 </html>
