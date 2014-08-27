@@ -57,3 +57,17 @@ typedef struct entry {
 					}
 				}
 				
+				void sortPointer(void **ar, int n,
+									int(*cmp)(const void *, const void *)){
+					int i;
+					num = numBuckets(n);
+					buckets = (BUCKET *) calloc (num, sizeof(BUCKET));
+					for (i=0; i<n;i++){
+						int k = hash(ar[i]);
+						
+						/** Insert each element and increment counts */
+							entry *E = (BUCKET *) calloc (num, sizeof (BUCKET));
+							for (i = 0; i < n; i++) {
+								int k = hash(ar[i]);
+								
+								
