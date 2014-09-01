@@ -1,93 +1,492 @@
-<!DOCTYPE html>
-<html>
-<body>
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<link rel="stylesheet" type="text/css" href="csshorizontalmenu.css" />
+  <meta charset="utf-8">
 
-/** 
-*add backbone
-**/
-<script src="jquery.js"></script>
-<script src="underscore.js"></script>
-<script src="backbone.js"></script>
-<script src="workflow.js"></script>
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<script type="text/javascript" src="csshorizontalmenu.js">
-
-/***********************************************
-
-* CSS Horizontal List Menu- by JavaScript Kit (www.javascriptkit.com)
-* Menu interface credits: http://www.dynamicdrive.com/style/csslibrary/item/glossy-vertical-menu/ 
-* This notice must stay intact for usage
-* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
-
-***********************************************/
+  
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Antennas &amp; Electromagnetics Research Group :: Home</title>
+<meta name="description" content="" />
+<meta name="generator" content="concrete5 - 5.6.2.1" />
+<script type="text/javascript">
+var CCM_DISPATCHER_FILENAME = '/index.php';
+var CCM_CID = 1;
+var CCM_EDIT_MODE = false;
+var CCM_ARRANGE_MODE = false;
+var CCM_IMAGE_PATH = "/concrete/images";
+var CCM_TOOLS_PATH = "/index.php/tools/required";
+var CCM_BASE_URL = "http://antennas.eecs.qmul.ac.uk";
+var CCM_REL = "";
 
 </script>
-<link rel="stylesheet" href="style1.css" type="text/css" />
-    <title> Saul Wiggin Icarus Blog Metamaterials </title>
-    <meta name="description=" content="Saul Wiggin's Icarus Blog contains
-    up to date information of Saul Wiggin. Work regarding all-dieletric optical systems
-    using transformation optics.">
-  </head>
+
+<link rel="stylesheet" type="text/css" href="/concrete/css/ccm.base.css?v=b96265064f49247b20b2e463aca947ce" />
+<script type="text/javascript" src="/concrete/js/jquery.js?v=b96265064f49247b20b2e463aca947ce"></script>
+<script type="text/javascript" src="/concrete/js/ccm.base.js?v=b96265064f49247b20b2e463aca947ce"></script>
+<style type="text/css"> 
+#ccm-layout-sidebar-2-1 .ccm-layout-col-spacing { margin:0px 5px } 
+#ccm-layout-sidebar-1-2 .ccm-layout-col-spacing { margin:0px 5px } 
+</style>
+<link rel="stylesheet" type="text/css" href="/themes/antennas-2014/stylesheets/style.css?v=b96265064f49247b20b2e463aca947ce" />
+<link rel="stylesheet" type="text/css" href="/concrete/blocks/page_list/view.css?v=b96265064f49247b20b2e463aca947ce" />
+<link rel="stylesheet" type="text/css" href="/packages/jereme_tweetcrete/blocks/jereme_tweetcrete/view.css?v=b96265064f49247b20b2e463aca947ce" />
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#da532c">
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="/themes/antennas-2014/js/libs/modernizr-2.0.6.min.js"></script>
+
+</head>
+
+<body id="home">
+
+    <header>
+        <div id="header-area">
+			<a href="/"><img id="logo" src="/themes/antennas-2014/img/logo.png" alt="Logo" /></a>
+			<div id="site-name">
+				<a href="/"><strong>Antennas &amp; Electromagnetics</strong>
+				Research Group</a>
+			</div>
+			<div id="header-supplementary">
+				<form action="/index.php/search/" method="get" class="ccm-search-block-form">
+				<input name="search_paths[]" type="hidden" value="">
+				<input name="query" type="text" value="" class="ccm-search-block-text" placeholder="Search">
+				</form>
+			</div>
+        </div>
+		<div id="main-navigation">
+			<a href="#" id="menu-link"><span class="menu-icon"></span>Menu</a>
+		<ul class="nav"><li class="nav-selected nav-path-selected"><a href="/" target="_self" class="nav-selected nav-path-selected">Home</a></li><li class=""><a href="/research/" target="_self" class="">Research</a><ul><li class=""><a href="/research/graphene-and-nanomicrowave/" target="_self" class="">Graphene and Nanomicrowave</a></li><li class=""><a href="/research/metamaterials-and-transformation-optics/" target="_self" class="">Metamaterials and Transformation Optics</a></li><li class=""><a href="/research/antennas-mobile-and-satellite-communications/" target="_self" class="">Antennas for Mobile and Satellite Communications</a></li><li class=""><a href="/research/body-centric-wireless-commnication-and-networks/" target="_self" class="">Body-Centric Wireless Communication and Networks</a></li><li class=""><a href="/research/bio-electromagnetic-healthcare-and-security-applications/" target="_self" class="">Bio-electromagnetics for Healthcare and Security Applications</a></li><li class=""><a href="/research/antennas-and-em-interaction-life-sciences/" target="_self" class="">Antennas and EM interaction with Life Sciences</a></li><li class=""><a href="/research/quasi-optics-and-millimetrewavethz-antennas-and-devices/" target="_self" class="">Quasi-optics and Millimetre-wave/THz Antennas and Devices</a></li><li class=""><a href="/research/active-and-reconfigurable-antennas-and-microwave-devices/" target="_self" class="">Active and Reconfigurable Antennas and Microwave Devices</a></li><li class=""><a href="/research/cognitive-radio-antennas-intelligent-networking/" target="_self" class="">Cognitive Radio and Machine-to-Machine Communications</a></li><li class=""><a href="/research/antennas-and-radios-localisation-and-tele-control/" target="_self" class="">Antennas and Radios for Localisation and Tele-control</a></li><li class=""><a href="/research/antenna-metrology-theory-and-applications/" target="_self" class="">Antenna Metrology Theory and Applications</a></li></ul></li><li class=""><a href="/facilities/" target="_self" class="">Facilities</a><ul><li class=""><a href="/facilities/antenna-measurement-laboratory/" target="_self" class="">Antenna Measurement Laboratory</a></li><li class=""><a href="/facilities/mechanical-workshop/" target="_self" class="">Mechanical Workshop</a></li><li class=""><a href="/facilities/software/" target="_self" class="">Software and Computing</a></li></ul></li><li class=""><a href="/people/" target="_self" class="">People</a></li><li class=""><a href="/publications/" target="_self" class="">Publications</a></li><li class=""><a href="/outreach/" target="_self" class="">Outreach</a><ul><li class=""><a href="/outreach/outreach-activities/" target="_self" class="">Outreach Activities</a></li><li class=""><a href="/outreach/lectures-schools/" target="_self" class="">Lectures for Schools</a></li><li class=""><a href="/outreach/media-appearances/" target="_self" class="">Media Appearances</a></li></ul></li><li class=""><a href="/news-events/news/" target="_self" class="">News & Events</a><ul><li class=""><a href="/news-events/news/" target="_self" class="">Latest News</a></li><li class=""><a href="/news-events/events/" target="_self" class="">Events</a></li><li class=""><a href="/news-events/group-highlights/" target="_self" class="">Group Highlights</a></li></ul></li></ul>		</div>
+    </header>
+
+<div id="central" role="main" class="clearfix">
+
+	<div id="banner">
+		
+	<div class="viewport">
+			<div class="image-slide" style="background-image: url('/files/1813/9222/3852/default-page-header.jpg')">
+				<div class="caption">
+					<h4>
+						<a  href="/news-events/news/antennas-academic-awarded-twice-leading-international-conferences/">Double Best Paper Awards for Antennas Academic</a>
+					</h4>
+					<p>
+					Dr Maged Elkashlan from the Antennas Group receives the best paper award at IEEE ICC 2014 in Sydney, Australia and at CHINACOM 2014 in Maoming, China					</p>
+					<div class="readmore">Read More <span class="plus">+</span></div>
+				</div>
+			</a>
+		</div>
+			<div class="image-slide" style="background-image: url('/files/7414/0144/4168/bodyarea-sensors-header2.jpg')">
+				<div class="caption">
+					<h4>
+						<a  href="/news-events/news/book-body-area-and-wireless-sensors-healthcare/">Book on Body-Area and Wireless Sensors for Healthcare</a>
+					</h4>
+					<p>
+					A book on developing wireless body sensor networks has been published by Elsevier					</p>
+					<div class="readmore">Read More <span class="plus">+</span></div>
+				</div>
+			</a>
+		</div>
+			<div class="image-slide" style="background-image: url('/files/8414/0198/0964/BAEtiran.jpg')">
+				<div class="caption">
+					<h4>
+						<a  href="/news-events/news/bae-collaboration-quest/">BAE collaboration with QUEST</a>
+					</h4>
+					<p>
+					Combination of spatial transformations and composite materials generates interest					</p>
+					<div class="readmore">Read More <span class="plus">+</span></div>
+				</div>
+			</a>
+		</div>
+			<div class="image-slide" style="background-image: url('/files/4514/0128/5570/TEMbook1.jpg')">
+				<div class="caption">
+					<h4>
+						<a  href="/news-events/news/book-chapter-transformation-optics-antennas/">Book chapter on Transformation Optics & Antennas</a>
+					</h4>
+					<p>
+					Book chapter in 'Transformation Electromagnetics and Metamaterials' published					</p>
+					<div class="readmore">Read More <span class="plus">+</span></div>
+				</div>
+			</a>
+		</div>
+			<div class="image-slide" style="background-image: url('/files/7014/0128/5250/abe1c187d50c4c7104f06c60ddefc27d_f132.jpg')">
+				<div class="caption">
+					<h4>
+						<a  href="/news-events/news/antennas-group-academic-work-npl/">Antennas Group Academic to work with NPL</a>
+					</h4>
+					<p>
+					Dr Alomainy will work on improving and creating new techniques to develop traceable and cost-effective measurement solutions for characterising the…					</p>
+					<div class="readmore">Read More <span class="plus">+</span></div>
+				</div>
+			</a>
+		</div>
+	 
+
+	</div> <!-- end viewport //-->
+
+	<ul id="pager">
+			<li class="">
+			<a href="#">Double Best Paper Awards for Antennas Academic</a>
+		</li>
+			<li class="">
+			<a href="#">Book on Body-Area and Wireless Sensors for Healthcare</a>
+		</li>
+			<li class="">
+			<a href="#">BAE collaboration with QUEST</a>
+		</li>
+			<li class="">
+			<a href="#">Book chapter on Transformation Optics & Antennas</a>
+		</li>
+			<li class="last">
+			<a href="#">Antennas Group Academic to work with NPL</a>
+		</li>
+		</ul>
 
 
-<h2> Icarus Optics </h2>
+	</div>
 
+	<div id="researchtopics">
+		<h2>Group Research Themes</h2>
 
-<div class="horizontalcssmenu">
-<ul id="cssmenu1">
-<h3> <script type="text/javascript">
-document.write("website navigation ");  </script></h3> 
+		<div id="research-slider">
+	<ul>
+			<li class="">
+		<div>
+							<a  href="/research/graphene-and-nanomicrowave/" class="image-link">
 
-<ul>
-	<li> <a href="Publications.html">Publications </a> </li>
-    <li> <a href="biography.html">Biography </a> </li>
-    <li> <a href="shop.html">Shop </a> </li>
-    <li> <a href="register.html"> Register </a></li>
-       <li> <a href="mobile.html">Mobile </a> </li>
-</ul>
-</ul>
+					<img src="http://antennas.eecs.qmul.ac.uk/files/8114/0120/2762/Graphene.png" alt="Graphene and Nanomicrowave" />
+					</a>
+							<a  href="/research/graphene-and-nanomicrowave/">Graphene and Nanomicrowave</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/metamaterials-and-transformation-optics/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/5713/9324/4854/Divider_RNF.png" alt="Metamaterials and Transformation Optics" />
+					</a>
+							<a  href="/research/metamaterials-and-transformation-optics/">Metamaterials and Transformation Optics</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/antennas-mobile-and-satellite-communications/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/1813/9222/3852/default-page-header.jpg" alt="Antennas for Mobile and Satellite Communications" />
+					</a>
+							<a  href="/research/antennas-mobile-and-satellite-communications/">Antennas for Mobile and Satellite Communications</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/body-centric-wireless-commnication-and-networks/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/4313/9272/9585/OnBody_Meas.jpg" alt="Body-Centric Wireless Communication and Networks" />
+					</a>
+							<a  href="/research/body-centric-wireless-commnication-and-networks/">Body-Centric Wireless Communication and Networks</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/bio-electromagnetic-healthcare-and-security-applications/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/5213/9325/1485/7562756504_6ff6e65cec_b.jpg" alt="Bio-electromagnetics for Healthcare and Security Applications" />
+					</a>
+							<a  href="/research/bio-electromagnetic-healthcare-and-security-applications/">Bio-electromagnetics for Healthcare and Security Applications</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/antennas-and-em-interaction-life-sciences/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/3813/9324/4201/7562763466_75be8cc00c_b.jpg" alt="Antennas and EM interaction with Life Sciences" />
+					</a>
+							<a  href="/research/antennas-and-em-interaction-life-sciences/">Antennas and EM interaction with Life Sciences</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/quasi-optics-and-millimetrewavethz-antennas-and-devices/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/3313/9265/5676/THz_Img2.jpg" alt="Quasi-optics and Millimetre-wave/THz Antennas and Devices" />
+					</a>
+							<a  href="/research/quasi-optics-and-millimetrewavethz-antennas-and-devices/">Quasi-optics and Millimetre-wave/THz Antennas and Devices</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/active-and-reconfigurable-antennas-and-microwave-devices/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/6613/9324/5657/ActiveRecon.jpg" alt="Active and Reconfigurable Antennas and Microwave Devices" />
+					</a>
+							<a  href="/research/active-and-reconfigurable-antennas-and-microwave-devices/">Active and Reconfigurable Antennas and Microwave Devices</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/cognitive-radio-antennas-intelligent-networking/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/1813/9222/3852/default-page-header.jpg" alt="Cognitive Radio and Machine-to-Machine Communications" />
+					</a>
+							<a  href="/research/cognitive-radio-antennas-intelligent-networking/">Cognitive Radio and Machine-to-Machine Communications</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/antennas-and-radios-localisation-and-tele-control/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/4314/0120/4282/Robot.png" alt="Antennas and Radios for Localisation and Tele-control" />
+					</a>
+							<a  href="/research/antennas-and-radios-localisation-and-tele-control/">Antennas and Radios for Localisation and Tele-control</a>
+		</div>
+		</li>
+	
+		<li class="">
+		<div>
+							<a  href="/research/antenna-metrology-theory-and-applications/" class="image-link">
+
+					<img src="http://antennas.eecs.qmul.ac.uk/files/6613/9324/5362/AntennaMet.jpg" alt="Antenna Metrology Theory and Applications" />
+					</a>
+							<a  href="/research/antenna-metrology-theory-and-applications/">Antenna Metrology Theory and Applications</a>
+		</div>
+		</li>
+	
+	</ul> <!-- end of slider //-->
+	</div>
+
+	<div class="controls">
+	<a href="#" class="prev-slide"></a>
+	<a href="#" class="next-slide"></a>
+	</div>
+
+		
+	
+
+	</div>
+
+	<div id="body">
+	<h2>About the Antennas &amp; Electromagnetics Research Group</h2>
+<p>Established in 1968, the Antennas &amp; Electromagnetics (Antennas) Group has comprehensive experimental facilities housed in the <a title="Antenna Measurement Laboratory" href="/facilities/antenna-measurement-laboratory/">Antenna Measurement Laboratory</a>, which has recently received £1 million in infrastructure investment. The group has strong links with industry and a current active grant portfolio of over £7m. This includes a prestigious EPSRC Programme Grant led by Prof. Yang Hao on <a href="http://www.quest-spatial-transformation.org/" target="_blank">Transformation Electromagnetics</a>, worth around £4.6m, and a successfully completed EPSRC platform grant, valued at £1.2m, to fund post-doctoral researchers, as well as in- reach and outreach activities with other world-leading antenna laboratories. Our research themes and interests range from satellite reflector arrays and compact antenna test ranges to nano-scale particles applied in bio-electromagnetics. Our activities range from TV White-Space communication at low frequencies to THz spectroscopy beyond 3 THz. For more on our general research themes and recent activities, please explore our <a title="Research" href="/research/">Research</a>.</p>
+<p>The Antennas Group's mission statement is "High Quality Research backed by High Quality Measurements". Comprehensive experimental facilities are available at Queen Mary and are housed in the <a title="Antenna Measurement Laboratory" href="/facilities/antenna-measurement-laboratory/">Antenna Measurement Laboratory</a>. Research in the Group is directed by Prof. Clive Parini FREng, together with ten full-time academic members of staff, a full-time CAD/CAM engineer, a laboratory manager, and a workshop manager. The Group is also assisted by a part-time research professor, four visiting professors and five visiting researchers. In addition, our research population includes around 51 post-doctoral research associates and research students. Visit <a title="People" href="/!trash/people/">People</a> for more information on those involved. We are active in both professional and public engagement; see the <a title="Outreach" href="/outreach/">Outreach</a> and <a title="News &amp; Events" href="/news-events/">News &amp; Events</a> pages to keep up-to-date with what we are doing.</p>	</div>
+	
+	<aside id="sidebar">
+	<div id="ccm-layout-wrapper-53" class="ccm-layout-wrapper"><div id="ccm-layout-sidebar-2-1" class="ccm-layout ccm-layout-table  ccm-layout-name-Sidebar-Layout-1 "><div class="ccm-layout-row ccm-layout-row-1"><div class="ccm-layout-2-col-1 ccm-layout-cell ccm-layout-col ccm-layout-col-1 first" style="width:50%"><div class="ccm-layout-col-spacing"><h2>Twitter</h2>
+<div class="ccm-jereme-tweetcrete">
+  <div class="ccm-jereme-tweetcrete-timeline">
+      </div>
+  
+  
+  <div class="ccm-jereme-tweetcrete-timeline">
+    <ul>
+                        <li>
+            			                <span class="posted-by">
+        			<a href="http://twitter.com/QMAntennas" target="new">@QMAntennas</a>                </span>
+              			                            <span class="ccm-jereme-tweet-time">21 Aug</span>
+                          
+			<div class="ccm-jereme-tweet-text">RT <a href="http://twitter.com/CSTworld" target="_blank">@CSTworld</a>: Cool vid of <a href="http://twitter.com/SurreySat" target="_blank">@SurreySat</a>'s TechDemoSat-1 in orbit:<a href="http://t.co/87SgjQlU6V." target="_blank">http://t.co/87SgjQlU6V.</a> <a href="http://twitter.com/QMAntennas" target="_blank">@QMAntennas</a> designed its antenna with CST: <a href="http://t.c…" target="_blank">http://t.c…</a>              
+            </div>
+                        <div style="clear:both;"></div>
+          </li>
+                  <li>
+            			                <span class="posted-by">
+        			<a href="http://twitter.com/QMAntennas" target="new">@QMAntennas</a>                </span>
+              			                            <span class="ccm-jereme-tweet-time">20 Aug</span>
+                          
+			<div class="ccm-jereme-tweet-text">RT <a href="http://twitter.com/CSTworld" target="_blank">@CSTworld</a>: Interested in <a href="https://twitter.com/search?q=%23RFID&src=tweetcrete" target="_blank">#RFID</a> <a href="https://twitter.com/search?q=%23antennadesign&src=tweetcrete" target="_blank">#antennadesign</a> for smart shelving apps? Then see this presentation from CST’s 2014 EUC. <a href="http://t.co/tibSj…" target="_blank">http://t.co/tibSj…</a>              
+            </div>
+                        <div style="clear:both;"></div>
+          </li>
+                  <li>
+            			                <span class="posted-by">
+        			<a href="http://twitter.com/QMAntennas" target="new">@QMAntennas</a>                </span>
+              			                            <span class="ccm-jereme-tweet-time">14 Aug</span>
+                          
+			<div class="ccm-jereme-tweet-text">Double Best Paper Awards for <a href="http://twitter.com/QMAntennas" target="_blank">@QMAntennas</a> <a href="http://twitter.com/QMEECS" target="_blank">@QMEECS</a> Academic at leading international communication conferences <a href="http://t.co/GkyfyM9N6n" target="_blank">http://t.co/GkyfyM9N6n</a>              
+            </div>
+                        <div style="clear:both;"></div>
+          </li>
+                  <li>
+            			                <span class="posted-by">
+        			<a href="http://twitter.com/QMAntennas" target="new">@QMAntennas</a>                </span>
+              			                            <span class="ccm-jereme-tweet-time">8 Aug</span>
+                          
+			<div class="ccm-jereme-tweet-text">Quantified Self, Privacy and Wearables: New Study <a href="http://twitter.com/intelsensing" target="_blank">@intelsensing</a> by Alomainy <a href="http://twitter.com/QMAntennas" target="_blank">@QMAntennas</a> and Haddadi <a href="http://twitter.com/QMCogSci" target="_blank">@QMCogSci</a> <a href="http://t.co/X97nF8o3O2" target="_blank">http://t.co/X97nF8o3O2</a>              
+            </div>
+                        <div style="clear:both;"></div>
+          </li>
+                  </ul>
+  </div>
+</div>  
+</div></div><div class="ccm-layout-2-col-2 ccm-layout-cell ccm-layout-col ccm-layout-col-2 last" style="width:49.99%"><div class="ccm-layout-col-spacing"><h2>Latest News</h2>	<div class="news-list">	
+			<div class="news-item clearfix">
+			<h3><a  href="/news-events/news/antennas-academic-awarded-twice-leading-international-conferences/">Double Best Paper Awards for Antennas Academic</a></h3>
+			<div class="meta">14 Aug 2014</div>
+		</div>
+	
+			<div class="news-item clearfix">
+			<h3><a  href="/news-events/news/book-body-area-and-wireless-sensors-healthcare/">Book on Body-Area and Wireless Sensors for Healthcare</a></h3>
+			<div class="meta">31 Jul 2014</div>
+		</div>
+	
+			<div class="news-item clearfix">
+			<h3><a  href="/news-events/news/antennas-phd-student-wins-award-engineering-yes-2014/">Antennas PhD Student Wins Award at 'Engineering Yes 2014'</a></h3>
+			<div class="meta">20 Jun 2014</div>
+		</div>
+	
+			<div class="news-item clearfix">
+			<h3><a  href="/news-events/news/bae-collaboration-quest/">BAE collaboration with QUEST</a></h3>
+			<div class="meta">5 Jun 2014</div>
+		</div>
+	
+			<div class="news-item clearfix">
+			<h3><a  href="/news-events/news/antennas-member-selected-uk-ursi-pan/">Antennas member selected for UK URSI Panel</a></h3>
+			<div class="meta">3 Jun 2014</div>
+		</div>
+	
+			<div class="news-item clearfix">
+			<h3><a  href="/news-events/news/flat-luneburg-lens/">Flat Luneburg Lens</a></h3>
+			<div class="meta">22 May 2014</div>
+		</div>
+	
+			<div class="news-item clearfix">
+			<h3><a  href="/news-events/news/sculpting-surfaces-avoid-impossible-materials/">Sculpting surfaces to avoid impossible materials</a></h3>
+			<div class="meta">9 May 2014</div>
+		</div>
+	
+		</div>
+
+		
+	
+
+</div></div><div class="ccm-spacer"></div></div></div></div><div id="ccm-layout-wrapper-54" class="ccm-layout-wrapper"><div id="ccm-layout-sidebar-1-2" class="ccm-layout ccm-layout-table  ccm-layout-name-Sidebar-Layout-2 "><div class="ccm-layout-row ccm-layout-row-1"><div class="ccm-layout-1-col-1 ccm-layout-cell ccm-layout-col ccm-layout-col-1 first" style="width:100%">&nbsp;</div><div class="ccm-spacer"></div></div></div></div>	</aside>
+
 </div>
 
+<script src="/themes/antennas-2014/js/libs/jquery.cycle.all.min.js"></script>
+<script src="/themes/antennas-2014/js/libs/lemmon-slider.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#banner .viewport')
+	.cycle({ 
+		fx:     'fade', 
+		speed:  'slow', 
+		timeout: 3000,
+		pause: 1,
+		pager:  '#pager',
+		slideResize: false,
+		pagerAnchorBuilder: function(idx, slide) { 
+	        // return selector string for existing anchor 
+	        return '#pager li:eq(' + idx + ') a'; 
+	    } 
+	});
 
-<h3> Transformation optics holds real potential to revolutionise the optics and antennas industry. Saul Wiggin's Icarus Blog contains up to date information of Saul Wiggin. Work regarding all-dieletric optical systems using transformation optics. This is based on the technology on <a href="http://en.wikipedia.org/wiki/Transformation_optics"> metamaterials<a/> and it is possible to design all sorts of interesting things such as: </h3>
-<ul>
-	<li> <a href="http://en.wikipedia.org/wiki/Metamaterial_cloaking">Invisibility cloaks </a> </li>
-    <li> <a href= "http://en.wikipedia.org/wiki/Flat_lens">Flat Lenses </a> </li>
-    <li> 
-      
-    <a href="http://en.wikipedia.org/wiki/Superlens" >Sub-wavelength Imagers </a></li>
-</ul>
+	$('.image-slide').click(function(){
+			document.location = $(this).find("a").attr('href');
+	});
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/T7Xw5Pne_nU" frameborder="0" allowfullscreen></iframe>
+	$('#research-slider').lemmonSlider({ 'infinite': true });
 
+	/*$('#research-slider').hover(
+		function(){ // hoverIn
+			clearInterval(sliderTimeout);
+		},
+		function(){ // hoverOut
+			sliderAutoplay();
+		}
+	);
+	sliderAutoplay(); */
 
-		  <h3> Buy the Book: Beyond Metamaterials: Invisibility and Sub-wavelength Resolution  </h3>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="R55R5NNEBU3X4">
-<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
+});
 
+var sliderTimeout;
 
-<h3> A Demonstration of the technology by Kymeta</h3>
-<iframe width="560" height="315" src="//www.youtube.com/embed/ykCMyTm6H08" frameborder="0" allowfullscreen></iframe>
-
-<h2> Location </h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2440.471352126079!2d-1.5408658999999998!3d52.289298800000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487734eae59d8669%3A0x412fd3590ab56341!2sFeldon+House%2C+4+Portland+Pl+W%2C+Leamington+Spa%2C+Warwickshire+CV32+5EU!5e0!3m2!1sen!2suk!4v1408214171339" width="400" height="300" frameborder="0" style="border:0"></iframe>
-
-<h3> Link to my Iccarus Blog where I publish my latest research and music</h3>
-<a href="http://feeds.feedburner.com/Iccarusblog" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a><a href="http://feeds.feedburner.com/Iccarusblog" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">Subscribe in a reader</a>
+function sliderAutoplay(){
+	sliderTimeout = setInterval( function(){
+		$( '#research-slider' ).trigger( 'nextSlide' );
+	}, 3000 );
+}
 
 
-<script src="/way.bundle.min.js"></script>
+</script>
 
-<p> Contact Icarus Optics on email: saulwiggin@googlemail.com or phone +0044 (0) 78672808</p>
+<script src="/themes/antennas-2014/js/libs/jquery.toc.min.js"></script>
+<script src="/themes/antennas-2014/js/libs/jquery.autofix_anything.js"></script>
+<script type="text/javascript">
 
-<div id="mario-mushroom" class="entry">
-      <div></div>
-    </div>
+$(function(){
+	
+	// ignore if on homepage
+	if ($('#home').length <= 0) {
+		$('#sidebar').autofix_anything();
+
+		// fix for resizing bug
+		$(window).resize(function(){
+			$('#sidebar').removeClass("bottom fixed").removeAttr("style").autofix_anything();
+			$('#sidebar').manualfix();
+		});
+	}
+});
+</script>
+  
+
+ <footer>
+		<div id="footer-area">
+			<div id="copyright">
+				<p>© Queen Mary, University of London 2014</p>
+				<p><span>School of Electronic Engineering and Computer Science, Queen Mary University of London, Mile End Road, Mile End, London, E1 4NS, UK.</span></p>
+<p>Tel: +44 (0)20 7882 5346. Fax: +44 (0)20 7882 7997</p>	
+			</div>
+			<div id="footer-partners">
+				<a href="http://www.qmul.ac.uk/"><img src="/themes/antennas-2014/img/qmul-logo.png" alt="Queen Mary University of London Logo"></a>
+					</div>
+		</div>
+    </footer>
+  
+  <!-- JavaScript at the bottom for fast page loading -->
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="/themes/antennas-2014/js/plugins.js"></script>
+  <script src="/themes/antennas-2014/js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
 </body>
 </html>
