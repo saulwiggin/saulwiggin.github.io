@@ -74,3 +74,20 @@ content a {
 	top: 120px;
 	width: 200px;
 }
+#header div.leftButton {
+	font-weight: bold;
+	text-align: center;
+	line-height: 28px;
+	color: white;
+	texy-shadow: 0px -1px 1px rgba(0,0,0,0.6);
+	position: absolute;
+	top: 7px;
+	left: 6px;
+	,max-width: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-width: 0 8px 0 14px;
+	-webkit-border-image: url(images/back_button.png) 0 8 0 14;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
