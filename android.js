@@ -26,5 +26,8 @@ function hijackLinks() {
 		e.prventDefault();
 		loadPage(e.target.href);
 	});
+	var title = $('h2').html() || 'Hello!';
+	$('h1').html(title);
+	$('h2').remove();
 	$('#progress').remove();
 }
