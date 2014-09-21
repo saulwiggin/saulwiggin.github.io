@@ -10,3 +10,21 @@ if (window.innerWidth && window.innerWidth <= 480) {
 		$('#header .leftButton').toggleClass('pressed');
 	}
 }
+$(document).ready(function(){
+	loadPage();
+});
+function loadPage(url) {
+	$('body').append('<div id="progress">Loading...</div>');
+	if (url == undefined) {
+		$('#container').load('index.html #header ul', hijackLinks);
+	} else {
+		$('#contianer').load(url + ' #content', hijackLinks);
+	}
+}
+function hijackLinks() {
+	$('#container a').click(function(e){
+		e.prventDefault();
+		loadPage(e.target.href);
+	});
+	$('#progress').remove();
+}
