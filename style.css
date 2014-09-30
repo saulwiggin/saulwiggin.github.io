@@ -100,6 +100,7 @@ header h2 {
 header {
 	padding-top: 20px;
 	height: 87px;
+	background-color:#FFCCCC;
 }
 
 .summary {
@@ -207,17 +208,40 @@ footer a:link, footer a:visited {
 }
 
 #blog {
+height: 400px;
+background-color: #FFFFCC;
+
 }
 
 #github{ 
+height: 900px;
+background-color: #CCFFCC;
 }
 
 #book{ 
+height: 600px;
+background-color: #CCFFFF;
 }
 
 #publication{ 
+height: 600px;
+background-color:#CCCCFF;
 }
 
 #contact{ 
+height: 700px;
+background-color: #FFCCFF;
+
 }
+
+#icaruslogo {
+font-family: kaushan-script, cursive;
+font-size:70px;
+width:300px;
+background-color: #FFFFCC;
+text-align:center;
+margin-left: auto;
+margin-right:auto;
+}
+
 div { }
