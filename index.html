@@ -1,156 +1,99 @@
-<!doctype html>
-<!-- add manifest file for offline mode-->
-<html manifest="demo.manifest">
-<html manifest="manifest.php">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-<head>
+    <title>Justified Nav Template for Bootstrap</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <meta charset="utf-8">
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
 
-   <!-- add jqtquery 
-<style type="text/css" media="screen">@import "../../themes/css/jqtouch.css";</style>
-<script src="../../src/lib/zepto.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="../../src/jqtouch.min.js" type="text/javascript" charset="utf-8"></script> -->
-  
-<!-- add javascript -->
-<script type="text/javascript" src="jquery.js"> </script>
-<script type="text/javascript" src="android.js"></script>
-<script type="text/javascript" src="kilo.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-</script>
-<link rel="stylesheet" type = "text/css"
-href = "style.css" />
-    <title> Saul Wiggin Icarus Blog Metamaterials </title>
-    <meta name="description=" content="Saul Wiggin's Icarus Blog contains
-    up to date information of Saul Wiggin.">
-	
-	<!-- add webfonts for icarus logo -->
-	<script src="//use.edgefonts.net/kaushan-script.js"></script> 
-	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
- <body>
-<div class="jumbotron">
- <div id="header" background-image=url('beach.png') >
-<h1> Saul Wiggin Personal Website </h1>
-</div>
+  <body>
 
-<div class="horizontalcssmenu">
-<ul class="nav nav-tabs" role="tablist">
-    <li class="active">
-	<a href="Publications.html"> Publications </a> 
-	</li>
-    <li>
-	<a href="biography.html"> C.V </a> 
-	</li>
-	<li> 
-	<a href="#Products"> Products </a> 
-	</li>
-	<li>
-	<a href="#Icarus"> Icarus </a>
-</ul>
-</div> 
+    <div class="container">
 
-<div id="blog">
-	<h1> My Blog </h1>
-	<a href="http://feeds.feedburner.com/Iccarusblog" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a><a href="http://feeds.feedburner.com/Iccarusblog" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">Subscribe in a reader</a> 
-	<p> This blog on wordpress contains the up-to-date commentary <br>
+      <div class="masthead">
+        <h3 class="text-muted">Saul Wiggin Personal Website</h3>
+        <ul class="nav nav-justified">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">C.V</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href="#">Programming</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Blog</h1>
+        <p class="lead">This blog on wordpress contains the up-to-date commentary <br>
 	of my research. I mostly work in matlab so any codes require <br>
 	matlab. I am investigating using transformation optics and <br>
 	metamaterials in optical systems. I may also run some experiments on <br>
-	something interesting I've read. </p>
-	<div class="container">
-  <div class="row">
-<div class="span4">
-  FDTD Simulation of an <a href="#cloak">Invisibility Cloak</a>
-</div> 
-<div class="span8">
-<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-<iframe width="560" height="315" src="//www.youtube.com/embed/pUpVg4F5Ob8" frameborder="0" allowfullscreen></iframe></div>
-</div>
-</div>  
-</div>
-	 
-</div>
-	
-<div id="github">
-	<h1> Programming </h1>
-	
-	<a href="https://github.com/saulwiggin"> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="profile_pic.jpg" style="width: 200px; height: 200px;"> </a> 
-	<p> This contains my work with  
+	something interesting I've read.</p>
+        <p><a class="btn btn-lg btn-success" href=""http://feeds.feedburner.com/Iccarusblog"" role="button">Check out my Blog</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Programming</h2>
+          <p>This contains my work with  
 	ROpenSci creating packages in for open source science. I am <br>
 	Co-founder with Mobile App Sailo which is a social network for <br>
 	travellers. </p>
-	<p>
-	<!-- carousel of programming projects -->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	
-	
-	<img src="sailo.png"  >
-	<a href="http://ropensci.org/"> <img src="Ropensci.jpg" > </a>
-	<div id="icaruslogo" >
-		Icarus
-	</div>
-	</p>
-		 </div>
-
-<!-- buy the book: Beyond Materials -->
-<div id="book">
-<p>
-	<h1> Buy the Book: Beyond Metamaterials: Invisibility and <br>
-	Sub-wavelength Resolution  </h1>
-	<!-- <p>
-	
-	<h2> My Kickstarter Campaign </h2>
-<!-- <iframe width="560" height="315" src="//www.youtube.com/embed/ykCMyTm6H08" frameborder="0" allowfullscreen></iframe> -->
-	<!--	 
-<!-- paypal button --> 
-</p>
-
-<p>
-<h1> Buy the book here through Paypal </h1>
-	<img src ="book-cover.jpg" height="300px">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <p><a class="btn btn-primary" href=""https://github.com/saulwiggin"" role="button">View Programming &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Beyond Materials: Invisibility and Perfect Imaging</h2>
+          <p>Metamaterials were described as one of the top 10 scientific breakthroughs of the last decade by Science magazine. Metamaterials are a new paradigm in science. A modern day scientific revolution where a slight change in perception, as Einsteins slight reformulation of the laws of relativity has led to a whole new field in Physics.</p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="R55R5NNEBU3X4">
 <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form>
-</div>
-
-<div id="publication">
-<h1> Publications </h1>
-<h1> Here is a link to my academia.com account: </h1> <a href="https://qmul.academia.edu/saulwiggin"> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="profile-picture.jpg" style="width: 200px; height: 200px;"> </a>
-<p> My supervisor was Professor Yang Hao, Professor Clive Parini FRS and Professor Ian Youngs (DSTL). I was funded partly by the EPRSC and <br>
+		  <!-- <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p> -->
+       </div>
+        <div class="col-lg-4">
+          <h2>Publications</h2>
+          <p>My supervisor was Professor Yang Hao, Professor Clive Parini FRS and Professor Ian Youngs (DSTL). I was funded partly by the EPRSC and <br>
  partly by DSTL. I have designed applications for transformation optics to engineering electromagnetic waves and optics. I worked with the QUEST <br>
  platform grant. Previous to this I completed my Masters at the University of Manchester on Physics where my final year project involved <br>
- astrophysical simulations of Masers around Late type stars. </p>
-</div>
+ astrophysical simulations of Masers around Late type stars.</p>
+          <p><a class="btn btn-primary" href=""https://qmul.academia.edu/saulwiggin"" role="button">View Publications &raquo;</a></p>
+        </div>
+      </div>
 
-<div id="footer">
-<span class="label label-info"><h1>Contact Info</h1></span>
-<p> Reach Out!
-email: saulwiggin@googlemail.com or phone: +0044 (0) 78672808</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2440.471352126079!2d-1.5408658999999998!3d52.289298800000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487734eae59d8669%3A0x412fd3590ab56341!2sFeldon+House%2C+4+Portland+Pl+W%2C+Leamington+Spa%2C+Warwickshire+CV32+5EU!5e0!3m2!1sen!2suk!4v1408214171339" width="400" height="300" frameborder="0" style="border:0"></iframe>
-</div>
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Company 2014</p>
+      </div>
 
-<!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-	
-	<!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com/" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=5797387&style=0006&nbdigits=5&type=ip&initCount=0" title="Tracking hits" Alt="Tracking hits"   border="0" >
-</a><br/>
-<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Web Counter" 
-target="_blank" style="font-family: Arial, Helvetica, sans-serif; 
-font-size: 10px; color: #6E6A68; text-decoration: none ;"><em>Web Counter</em>
-</a>   
+    </div> <!-- /container -->
 
-</body>
 
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
-
-
-
