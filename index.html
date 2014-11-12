@@ -35,6 +35,17 @@
 	<!-- add lobster and Cabin fonts from google fonts -->
 	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+	
+	<!-- include query application source -->
+	<script src="application.js"></script>
+
+	<script>
+	$(document).ready(function(){
+	$("h2").click( function(){
+		$("p").slideToggle("slow");
+	});
+	};
+	</script>
 
 	    <style>
       h1,h2 {
