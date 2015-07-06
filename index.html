@@ -68,6 +68,24 @@
   </head>
 
   <body>
+  
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">   </a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#cherry">Cherry Display Unit</a></li>
+        <li><a href="#book">Beyond Metamaterials</a></li>
+		<li><a href="#research">Academic Papers</a></li>
+        <li><a href="#blog">My Blog and Soundcloud Account</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <div class="container">
 <!--
@@ -85,17 +103,17 @@
 -->
  
       
-       <h1> Icarus Limited </h1>
+      
 
       <!-- Example row of columns -->
       <div class="row">
 	  
 	  	    <div class="featurette-divider">
      
- <div class="featurette">
+ <div class="featurette" id="cherry">
 			<div class="panel panel-danger">
 			<div class="panel-heading">
-			<h2 class="featurette-heading" title="Icarus" >Icarus Display Unit</h2> </div>
+			<h2 class="featurette-heading" title="Icarus" >Cherry Display Unit</h2> </div>
 			<div class="panel-body">
 				 <img alt="" src="raspberrypi.jpg" height="200px" style:"text-align:center">
 				 <br >
@@ -113,7 +131,7 @@ The software runs on a raspberry pi so it is cheap, much cheaper than buyer a ne
 
 		<div class="panel-default">
 
-		<div class="panel panel-primary">
+		<div class="panel panel-primary" id="research">
 		<div class="panel-heading"> <h2 class="featurette-heading" title="Publications"> <span title="Publications" id="header"> Publications </span> </h2> </div>
           <div >
           			<div class="panel-body">
@@ -130,7 +148,7 @@ The software runs on a raspberry pi so it is cheap, much cheaper than buyer a ne
 		  
 		   <hr class="featurette-divider">
 		   
-		   <div class="panel panel-info">
+		   <div class="panel panel-info" id="book">
 		   <div class="panel-heading"> <h2 class="featurette-heading" title="Buy Beyond Materials: Invisibility and Perfect Imaging">'Beyond Materials: Invisibility and Perfect Imaging' and 'Haskell Parallel Programming' and 'KnockoutJS for Web Development'</h2> </div>
 			<div class="panel-body">
 		 <div class="pagination-centered">  
@@ -163,7 +181,7 @@ The software runs on a raspberry pi so it is cheap, much cheaper than buyer a ne
 	    <div class="featurette-divider">
 	
 		<div class="panel panel-default"> 
-	 	   <div class="panel-heading"> <h2 class="featurette-heading" title="My Blog" >My Blog</h2> </div>
+	 	   <div class="panel-heading" id="blog"> <h2 class="featurette-heading" title="My Blog" >My Blog</h2> </div>
 	 		   <div class="panel-body">
 	 		   	 <img alt="" src="higgs_boson.jpg">
     			    <p class="lead">This blog on <strong> Wordpress </strong> contains the up-to-date commentary 
@@ -185,7 +203,7 @@ The software runs on a raspberry pi so it is cheap, much cheaper than buyer a ne
 	  
 	 <div class="featurette-divider">
 
-		<div class="panel panel-success"> 
+		<div class="panel panel-success" id="code"> 
 			<div class="panel-heading"> <div class="span12">  <h2 class="featurette-heading" title="Programming"> Programming  </h2> </div> </div>
 				<div class="panel-body">
      		     <p class="lead">This contains my work with  
@@ -193,11 +211,11 @@ The software runs on a raspberry pi so it is cheap, much cheaper than buyer a ne
 			Co-founder with Mobile App <strong> Sailo </strong> which is a social network for 
 			travellers kind of like a cross between tinder and Bla-bla-car. I also run an ecommerce site called <strong> <a href= "https://leamington-electronics.myshopify.com/ "> Icarus Drones </a> </strong> which sell the latest camera enabled personal drone tech </p>
 			<p>I write in Ruby, Perl, Python, Php, Javascript, Javascript frameworks like Angularjs and KnockoutJs, CSS, Twitter bootstrap, HTML, Unix shell scripting, AWK and Matlab. I use Python, Perl and Shell scripting to do scientific tasks such as natural language processes, machine learning, bigdata algorithms, quantitative finance and text processing for genomic and astronomy. I would have a chapter on the windows stack: C#, LINQ, Javascripts, ASP.NET, XML and using the visual studio IDE. MySql and NoSql databases liek MongoDb. I have used Java for graphical animations and multi-physics simulations using Processing. I have worked with assembly and another low-ish level languages like c for embedded programming and asmjs in Javscript. I have created web applications using these languages for professional customers. </p>
-     	     <!-- <div align="middle" > <img align="middle" src="Sailo.jpg" alt="missing figure" class="img-circle"> 
+     	     <div align="middle" > <img align="middle" src="Sailo.jpg" alt="missing figure" class="img-circle"> 
 			  <img src="Ropensci.jpg" alt="missing figure" class="img-thumbnail"> 
 			  <img src="sharelatex.jpg" alt="missing figure" class="img-rounded">
-		  </div> -->
-		   <img alt="" src="Ropensci.jpg" height="150px">
+		  </div>
+		 <!--   <img alt="" src="Ropensci.jpg" height="150px"> -->
 		   <br />
 		  <p><a class="btn btn-primary" href="https://github.com/saulwiggin" role="button"> Github Account &raquo;</a></p>
         </div>
@@ -210,7 +228,7 @@ The software runs on a raspberry pi so it is cheap, much cheaper than buyer a ne
 			<div class="panel panel-warning">
 
 		  <div class="featurette">
-		  <div class="panel-heading">
+		  <div class="panel-heading" id="cv">
 		  <h2 class="panel-heading" title="Curriculum Vitae">Curriculum Vitae</h2> </div>
 		  <div class="panel-body">
 		  	 <img alt="" src="profile-picture.jpg">
