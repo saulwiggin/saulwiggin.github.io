@@ -68,39 +68,29 @@
   </head>
 
   <body>
-  
+   <h2 class="text-muted">Saul Wiggin Personal Website</h2>
+<br>
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-	    <li><a href="cherrypi.html">Cherry Pi Ltd</a></li>
+	    <li class="active"><a href="cherrypi.html">Cherry Pi Ltd</a></li>
         <li><a href="book.html">Books</a></li>
 		<li><a href="research.html">Academic Papers</a></li>
         <li><a href="music.html">My Blog and Soundcloud Account</a></li>  
-		<li><a href="code.html">Code</a></li>
-        <li><a href="cv.html">CV</a></li>
+		<li><a href="code.html">Hacks</a></li>
+        <li><a href="biography.html">My CV</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
     <div class="container">
-<!--
-      <div class="masthead">
-        <h3 class="text-muted">Saul Wiggin Personal Website</h3>
-        <ul class="nav nav-justified">
-          <li class="active"><a href="http://saulwiggin@github.io">Home</a></li>
-          <li><a href="biography.html">C.V</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="https://github.com/saulwiggin">Github</a></li>
-          <li><a href="https://twitter.com/saul_wiggin">Twitter</a></li>
-          <li><a href="https://www.linkedin.com/pub/saul-wiggin/24/468/941">Linked In</a></li>
-        </ul>
-      </div>
--->
+
  
       <!-- Cool Animation for the front page of your website. -->
+<!-- 	  <h5> Visualisations with D3</h5>
+ -->	  
       <style>
 
 body {
@@ -123,8 +113,8 @@ circle {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
 
-var width = Math.max(960, innerWidth),
-    height = Math.max(500, innerHeight);
+var width = Math.max(480, innerWidth),
+    height = Math.max(150, innerHeight);
 
 var i = 0;
 
@@ -147,9 +137,9 @@ function particle() {
       .style("stroke", d3.hsl((i = (i + 1) % 360), 1, .5))
       .style("stroke-opacity", 1)
     .transition()
-      .duration(2000)
+      .duration(4000)
       .ease(Math.sqrt)
-      .attr("r", 100)
+      .attr("r", 200)
       .style("stroke-opacity", 1e-6)
       .remove();
 
@@ -159,9 +149,6 @@ function particle() {
 </script>
 
       <!-- Example row of columns -->
-    
-	
-
 
     </div> <!-- /container -->
       <!-- Site footer -->
