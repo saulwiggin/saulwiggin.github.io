@@ -100,38 +100,70 @@
       </div>
 -->
  
-      
-      
+      <!-- Cool Animation for the front page of your website. -->
+      <style>
+
+body {
+  margin: 0;
+  background: #222;
+  min-width: 960px;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+}
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script>
+
+var width = Math.max(960, innerWidth),
+    height = Math.max(500, innerHeight);
+
+var i = 0;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+svg.append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
+
+function particle() {
+  var m = d3.mouse(this);
+
+  svg.insert("circle", "rect")
+      .attr("cx", m[0])
+      .attr("cy", m[1])
+      .attr("r", 1e-6)
+      .style("stroke", d3.hsl((i = (i + 1) % 360), 1, .5))
+      .style("stroke-opacity", 1)
+    .transition()
+      .duration(2000)
+      .ease(Math.sqrt)
+      .attr("r", 100)
+      .style("stroke-opacity", 1e-6)
+      .remove();
+
+  d3.event.preventDefault();
+}
+
+</script>
 
       <!-- Example row of columns -->
-    <div class="row">
-	  
-
-		
-		   <hr class="featurette-divider">
-		
-			<div class="panel panel-warning">
-
-		  <div class="featurette">
-		  <div class="panel-heading" id="cv">
-		  <h2 class="panel-heading" title="Curriculum Vitae">Curriculum Vitae</h2> </div>
-		  <div class="panel-body">
-		  	 <img alt="" src="profile-picture.jpg">
-		  <p class="lead"><p class="lead"> </p>
-			  I am completing a PhD at Queen Mary university, school of electronic engineering, antennas and electromagnetics group on FDTD simulations of RF Metamaterials. My supervisor was Professor Yang Hao, Professor Clive Parini FRS and Professor Ian Youngs (DSTL). I was funded partly by the EPRSC and partly by DSTL. I have designed applications for transformation optics to engineering electromagnetic waves and optics. I worked with the QUEST platform grant. Previous to this I completed my Masters at the University of Manchester on Physics where my final year project involved astrophysical simulations of Masers around Late type stars.  -->
-			</p>
-		  <p><a class="btn btn-primary" href="biography.html" role="button" title="A link to my CV">A Link to my C.V &raquo;</a></p>
-		</div>
-		</div>
-		</div>
-		 </div>
-	   
-	      <hr class="featurette-divider">
-	   
-	   
+    
 	
-	</div>
-	</div>
+
+
+    </div> <!-- /container -->
       <!-- Site footer -->
       <div class="footer">
 		  <address>
@@ -145,9 +177,6 @@
   <a href="mailto:#">saulwiggin@googlemail.com</a>
 </address> 
       </div>
-
-    </div> <!-- /container -->
-
 	<!-- visitor counter -->
 	<a href="http://www.freecounterstat.com" title="website counter"><img src="http://counter1.statcounterfree.com/private/freecounterstat.php?c=bc1785f8fc24495def15d4348af83dbe" border="0" title="website counter" alt="website counter"></a>
         
